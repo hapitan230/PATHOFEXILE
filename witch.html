@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="local\oip.webp">
+<style>
+	body {
+  background-image: url("local/witch.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+ }
+
+	* {
+		box-sizing: border-box;
+	}
+	.row::after {
+    content: "";
+    clear: both;
+    display: table;
+	}
+	[class*="col-"] {
+		float: left;
+		padding: 15px;
+		 text-shadow: 90px 90px 4px #0E1424, 0 0 10px #302E45, 0 0 0px  #1C1F2E;
+	}
+	.col-1 {width: 8.33%;}
+	.clearleft {clear: left;}	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;
+		    box-shadow: 12px 12px 8px black;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		   background-color: rgba(0, 0, 0, .3);
+
+		
+		color: #ffffff;}
+		.col-33 {width: 25%;
+		    box-shadow: 12px 12px 8px black;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		   background-color: rgba(0, 0, 0, .3);
+
+		
+		color: #ffffff;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;
+	background-image: url("local/frame.jpeg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	.col-13 {width: 97%;}
+	html {
+			font-family: "Maiandra GD", sans-serif;
+	}
+	h1 {
+		  text-shadow: 10px 10px 4px #16191F, 0 0 25px #302E45, 0 0 5px  #1C1F2E;
+		  color: white;
+		  		animation: pulse 900ms ease-in-out infinite alternate;
+	}
+	h3{
+		text-shadow: 10px 10px 4px #16191F, 0 0 25px #302E45, 0 0 5px  #1C1F2E;	
+		color: white;
+	}
+	p{
+		 text-shadow: 10px 3px 4px #000000;
+	}
+	.header {
+	    size: 50% 100%;
+		background-color: #9933cc;
+		color: #ffffff;
+		padding: 15px;
+		text-align: center;
+		margin: auto;
+				    box-shadow: 12px 12px 8px black;
+
+		background-image: url("local/frame2.jpeg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+				    box-shadow: 12px 12px 8px black;
+
+		background-image: url("local/frame.jpeg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		list-style: none
+	}
+	.menu li {
+		padding: 8px;
+		list-style: none
+				    box-shadow: 12px 12px 8px black;
+
+		margin-bottom: 7px;
+		background-color: #33b5e5;
+		color: #ffffff;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12); 0 1px 2px rgba(0,0,0,0.24);
+		background-image: url("local/frame.jpeg");
+		background-size: 100% 100%;
+		list-style-type: none;
+		background-repeat: no-repeat;
+		 text-shadow: 10px 3px 4px #ffffff;
+	}
+	.menu li:hover {
+				  		animation: pulse 900ms ease-in-out infinite alternate;
+	}
+	.gradient-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffffff, #ffffff);
+    -webkit-background-clip: text; 
+    background-clip: text;         
+    color: transparent;        
+		}
+	.gradient-text2 {
+    background: linear-gradient(50deg, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+	}
+	.gradient-text3 {
+    background: linear-gradient(50deg, #E02222, #9E0505, #E02222);
+    -webkit-background-clip: text;
+	background-clip: text;
+    color: transparent;
+	}
+	.gradient-text4 {
+    background: linear-gradient(50deg, #071E61, #0C4AED, #071E61);
+    -webkit-background-clip: text;
+	background-clip: text;
+    color: transparent;
+	}
+	.gradient-text5 {
+    background: linear-gradient(50deg, #076907, #21CC21, #076907);
+    -webkit-background-clip: text;
+	background-clip: text;
+    color: transparent;
+	}
+	.outline {
+	  -webkit-text-stroke: 3px white;
+
+	}
+    background-clip: text;
+    color: transparent;
+	.animate {
+    width: 700px;
+    height: 700px;
+    display: block;
+    margin: auto;
+    transform-origin: center;
+    animation: pulse 900ms ease-in-out infinite alternate;
+}
+	img{
+				animation: pulse 900ms ease-in-out infinite alternate;
+
+	}
+keyframes pulse {
+	from { transform: scale(.98); opacity: 0.95; }
+	to   { transform: scale(.95); opacity: 2; }
+	
+    }
+	@media screen and (max-width: 800px) {
+    .col-6 {width: 50%;
+	background-image: url("local/frame.jpeg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		clear:left;
+		}
+	.col-3 {width: 100%;
+	height: 277.67px;
+		    box-shadow: 12px 12px 8px black;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		   background-color: rgba(0, 0, 0, .3);
+		clear:left;
+		  overflow-y: auto;
+  overflow-x: hidden;
+		
+		color: #ffffff;}
+		.col-33 {width: 50%;
+		height: 277.67px;
+		  overflow-y: auto;
+  overflow-x: hidden;
+		    box-shadow: 12px 12px 8px black;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		   background-color: rgba(0, 0, 0, .3);
+		
+		color: #ffffff;}
+		body {
+  background-image: url("local/witch.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+ }
+}
+	</style>
+	</head>
+	
+	<body>
+	
+	<div class="header">
+		<h1 class="gradient-text">Path Of Exile Characters</h1>
+		<h3 class="gradient-text2"><i> Classes and Info</i> </h3>
+	</div>
+	</br>
+	<div class="row">
+	<div class="col-3 menu">
+	<h1 align= center class="gradient-text">Classes</h1>	
+		<ul>
+			<a href=marauder.html class="gradient-text3" style="text-decoration:none;"><li><img src="local/Marauder_character_class.png" class="animate" width="30" height="20"> The Marauder</li></a>
+			<a href=ranger.html  class="gradient-text3"  style="text-decoration:none;"><li><img src="local/Ranger_character_class.png" class="animate" width="30" height="20"> The Ranger</li></a>
+			<a href=witch.html  class="gradient-text3"  style="text-decoration:none;" ><li><img src="local/Witch_character_class.png" class="animate" width="30" height="20"> The Witch</li></a>
+			<a href=templar.html  class="gradient-text3"  style="text-decoration:none;"><li><img src="local/Templar_character_class.png" class="animate" width="30" height="20"> The Templar</li></a>
+			<a href=shadow.html  class="gradient-text3"  style="text-decoration:none;"><li><img src="local/Shadow_character_class.png" class="animate" width="30" height="20"> The Shadow</li></a>
+			<a href=scion.html  class="gradient-text3" style="text-decoration:none;"><li><img src="local/110px-Scion_character_class.png" class="animate" width="30" height="20"> The Scion</li></a>
+		</ul>
+
+		<div class="col-13">
+		<ul>
+			<a href=beserker.html class="gradient-text3" style="text-decoration:none;"><li><img src="local/beserker.png" class="animate" width="30" height="20">The Beserker</li></a>
+			<a href=chieftan.html  class="gradient-text3"  style="text-decoration:none;"><li><img src="local/cheiftan.png" class="animate" width="30" height="20"> The Chieftan</li></a>
+			<a href=juggernaut.html  class="gradient-text3"  style="text-decoration:none;" ><li><img src="local/juggernaut.png" class="animate" width="30" height="20"> The Juggernaut</li></a>
+		</ul>
+		</div>
+		<div class="col-13 ">
+			<ul>
+			<a href=warden.html class="gradient-text3" style="text-decoration:none;"><li><img src="local/Warden_avatar.png" class="animate" width="30" height="20">The Warden</li></a>
+			<a href=pathfinder.html  class="gradient-text3"  style="text-decoration:none;"><li><img src="local/Pathfinder_avatar.png" class="animate" width="30" height="20"> The Pathfinder</li></a>
+			<a href=deadeye.html  class="gradient-text3"  style="text-decoration:none;" ><li><img src="local/Deadeye_avatar.png" class="animate" width="30" height="20"> The Deadeye</li></a>
+		</ul>
+			</div>
+		<div class="col-13" >
+			<ul>
+			<a href=elementalist.html class="gradient-text3" style="text-decoration:none;"><li><img src="local/Elementalist_avatar.png" class="animate" width="30" height="20">The Elementalist</li></a>
+			<a href=necromancer.html  class="gradient-text3"  style="text-decoration:none;"><li><img src="local/Necromancer_avatar.png" class="animate" width="30" height="20"> The Necromancer</li></a>
+			<a href=occultist.html  class="gradient-text3"  style="text-decoration:none;" ><li><img src="local/Occultist_avatar.png" class="animate" width="30" height="20"> The Occultist</li></a>
+		</ul>
+			</div>
+		<div class="col-13" >
+			<ul>
+			<a href=inquisitor.html class="gradient-text3" style="text-decoration:none;"><li><img src="local/Inquisitor_avatar.png" class="animate" width="30" height="20">The Inquisitor</li></a>
+			<a href=guardian.html  class="gradient-text3"  style="text-decoration:none;"><li><img src="local/Guardian_avatar.png" class="animate" width="30" height="20"> The Guardian</li></a>
+			<a href=hierophant.html  class="gradient-text3"  style="text-decoration:none;" ><li><img src="local/Hierophant_avatar.png" class="animate" width="30" height="20"> The Hierophant</li></a>
+		</ul>
+			</div>
+	
+		<div class="col-13" >
+			<ul>
+			<a href=saboteur.html class="gradient-text3" style="text-decoration:none;"><li><img src="local/Saboteur_avatar.png" class="animate" width="30" height="20">The Saboteur</li></a>
+			<a href=trickster.html  class="gradient-text3"  style="text-decoration:none;"><li><img src="local/Trickster_avatar.png" class="animate" width="30" height="20"> The Trickster</li></a>
+			<a href=assassin.html  class="gradient-text3"  style="text-decoration:none;" ><li><img src="local/Assassin_avatar.png" class="animate" width="30" height="20"> The Assassin</li></a>
+		</ul>
+			</div>
+		<div class="col-13">
+				<ul>
+			<a href=reliquarian.html class="gradient-text3" style="text-decoration:none;"><li><img src="local/Reliquarian_avatar.png" class="animate" width="30" height="20">The Reliquarian</li></a>
+			<a href=luminary.html  class="gradient-text3"  style="text-decoration:none;"><li><img src="local/Luminary_avatar.png" class="animate" width="30" height="20"> The Luminary</li></a>
+			<a href=ascendant.html  class="gradient-text3"  style="text-decoration:none;" ><li><img src="local/Ascendant_avatar.png" class="animate" width="30" height="20"> The Ascendant</li></a>
+		</ul>
+	</div>
+	</div>
+	<div class="col-6" padding=15px>
+	<p align=center>
+		<p align="center">
+    <a href="main.html">
+        <img src="local/Witch_character_class.png" class="animate"width="75%" height="60%">
+    </a>
+</p>
+	</p>
+	</div>
+	<div class="col-33" padding=15px>		<h1 align= center  class="gradient-text">Witch</h1>	
+		<p align="center">
+		 <a href="main.html">
+		<img src="local/download.png" class="animate align" width="85%" height="85%">
+		</a>
+		</p>
+	<p>The Witch is Path of Exile's pure intelligence class, making her an unmatched master of the elemental and dark arts.</p>
+	<p>She wields the power of raw magic to decimate her foes from a distance.</p>
+	<p>Her tremendous will surrounds her with a shimmering barrier against physical and magical attacks, a barrier that must first be pierced before the Witch herself is vulnerable. </p>
+	<p>In addition to pure damage-based magic, the Witch can also cripple and kill her enemies with curses and diseases. She is a leery friend, and a dangerous enemy.</p>
+		<ul>
+		<li> <b><p  class="gradient-text3"  class="outline"> Base Strength : 14</p></b></li>
+		<li><b><p  class="gradient-text4" class="outline"> Base Intelligence : 32</p></b></li>
+		<li><b><p  class="gradient-text5" class="outline"> Base Dexterity : 14</p></b></li>
+		</ul>
+	<p>"Why do the keen of mind seek to satiate their curiosity in Darkness and Depravity?</p>
+
+<p>Innocence is our Father, Oriath our Mother. When a Daughter strays away from the Light, she makes herself an Orphan.</p>
+
+<p>Learn well the lessons of Wraeclast will teach you, Witch. It is your only hope of finding your way home." -- High Templar Dominus</p>
+		
+		<div class="col-67 menu">
+		<ul>
+			<a href=elementalist.html class="gradient-text3" style="text-decoration:none;"><li><img src="local/Elementalist_avatar.png" class="animate" width="30" height="20">The Elementalist</li></a>
+			<a href=necromancer.html  class="gradient-text3"  style="text-decoration:none;"><li><img src="local/Necromancer_avatar.png" class="animate" width="30" height="20"> The Necromancer</li></a>
+			<a href=occultist.html  class="gradient-text3"  style="text-decoration:none;" ><li><img src="local/Occultist_avatar.png" class="animate" width="30" height="20"> The Occultist</li></a>
+		</ul>
+		</div>
+	</div>
+	
+	</div>
+	
+	
+	
+	</body>
+	</html>                                                                                                                                          	
